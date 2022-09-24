@@ -55,9 +55,9 @@ app.use((req, res, next) => {
 //     res.send("hola desde backend")
 // })
 //Cargamos los archivos de ruta
-app.use('/user', user_routes);
-app.use('/pet', pet_routes);
-app.use('/history', history_routes);
+app.use('/api/user', user_routes);
+app.use('/api/pet', pet_routes);
+app.use('/api/history', history_routes);
 
 
 /*app.listen(port, () => {

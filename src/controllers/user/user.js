@@ -11,9 +11,7 @@ const controller = {
         console.log(params);
 
         const user = new User();
-
-
-        user.name = params.name;
+         user.name = params.name;
         user.lastname = params.lastname;
         user.typedocument = params.typedocument;
         user.numberdocument = params.numberdocument;

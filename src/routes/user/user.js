@@ -6,10 +6,10 @@ const User = require('../../controllers/user/user');
 
 const router = express.Router();
 
-router.post('/', User.save);
+router.post('/save', User.save);
 
-router.get('/', User.getUser);
+router.get('/user', User.getUser);
 
-router.delete('/:id', User.delete);
+router.delete('/delete/:id', User.delete);
 
 module.exports = router;

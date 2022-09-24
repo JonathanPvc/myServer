@@ -5,10 +5,10 @@ const express = require('express');
 
 const router = express.Router();
 
-router.post('/', Pet.save);
+router.post('/save', Pet.save);
 
-router.get('/', Pet.getPet);
+router.get('/pet', Pet.getPet);
 
-router.delete('/:id', Pet.delete);
+router.delete('/delete/:id', Pet.delete);
 
 module.exports = router;

@@ -6,10 +6,10 @@ const History = require('../../controllers/history/history.js');
 
 const router = express.Router();
 
-router.post('/', History.save);
+router.post('/save', History.save);
 
-router.get('/', History.getHistory);
+router.get('/history', History.getHistory);
 
-router.delete('/:id', History.delete);
+router.delete('/delete/:id', History.delete);
 
-module.exports = router;
+module.exports = router; 
